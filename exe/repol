@@ -6,7 +6,7 @@ require 'optparse'
 
 Version = Repol::VERSION
 
-DEFAULT_FILENAME = 'RepolFile'
+DEFAULT_FILENAME = 'Repolfile'
 
 MAGIC_COMMENT = <<-EOS
 # -*- mode: ruby -*-
@@ -144,7 +144,7 @@ def main(argv)
     file = options[:file]
 
     unless File.exist?(file)
-      raise "No RepolFile found (looking for: #{file})"
+      raise "No Repolfile found (looking for: #{file})"
     end
 
     message = "Apply `#{file}` to Repository Policy"

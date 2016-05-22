@@ -25,10 +25,10 @@ Or install it yourself as:
 ```sh
 export AWS_ACCESS_KEY_ID='...'
 export AWS_SECRET_ACCESS_KEY='...'
-repol -e -o RepolFile  # export Repository Policy
-vi RepolFile
+repol -e -o Repolfile  # export Repository Policy
+vi Repolfile
 repol -a --dry-run
-repol -a               # apply `RepolFile`
+repol -a               # apply `Repolfile`
 ```
 
 ## Help
@@ -52,10 +52,10 @@ Usage: repol [options]
         --request-concurrency N
 ```
 
-## RepolFile example
+## Repolfile example
 
 ```ruby
-require 'other/RepolFile'
+require 'other/repolfile'
 
 repository "my_ecr_repo" do
   {"Version"=>"2008-10-17",
