@@ -20,7 +20,7 @@ def parse_options(argv)
     dry_run: false,
     color: true,
     request_concurrency: 8,
-    aws: {region: 'us-east-1'}, # TODO: Fix region
+    aws: {},
   }
 
   opt = OptionParser.new
